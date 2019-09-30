@@ -1,5 +1,6 @@
 <?php
 //Alexandre
+
 session_start();
 require '../vendor/autoload.php';
 function chargerClasse($classe)
