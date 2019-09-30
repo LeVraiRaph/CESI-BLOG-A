@@ -1,5 +1,5 @@
 <?php
-//Alexandre
+//Alexandre et Florian
 session_start();
 require '../vendor/autoload.php';
 function chargerClasse($classe)
