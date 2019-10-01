@@ -1,6 +1,6 @@
 <?php
 namespace src\Model;
-use PDO; // Utilsiation de USE pour éviter de faire des "\" devant chaque PDO
+use PDO; // Utilisation de USE pour éviter de faire des "\" devant chaque PDO
 
 class Bdd {
     private static $_instance = null;

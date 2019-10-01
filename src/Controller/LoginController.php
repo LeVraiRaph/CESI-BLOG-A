@@ -1,6 +1,6 @@
 <?php
 namespace src\Controller;
-
+use src\Model\user;
 class LoginController extends AbstractController {
 
     /**
@@ -19,28 +19,37 @@ class LoginController extends AbstractController {
     }
 
     /**
+     * Formulaire de connexion
+     */
+    public function Register(){
+        if($_POST){
+            $user = new user();
+            $user->setMail($_POST['mail']);
+            $user->setPassword($_POST['password']);
+            $user->add();
+            header('Location: /Login/Form');
+        }
+
+        echo $this->twig->render('Login/register.html.twig');
+
+    }
+    /**
      * Vérification du user / mdp
      */
     public function Check(){
         if($_POST){
-            if($_POST['remember']){
-                setcookie('rememberMeLogin', json_encode(array($_POST['login'],$_POST['password'])), time() + (86400 * 30), "/"); // 86400 = 1 day
-            }
-            if($_POST['login']=='admin' AND $_POST['password']=='password'){
-                $_SESSION['login'] = array(
-                    'role'  => ['admin']
-                );
-                header('Location: /AdminPost/List');
-            }elseif($_POST['login']=='admin2' AND $_POST['password']=='password'){
-                $_SESSION['login'] = array(
-                    'role'  => ['file','admin']
-                );
-                header('Location: /AdminPost/List');
-            }else{
-                $errMsg = "Erreur Authentification";
-                $_SESSION['errorlogin'] = $errMsg;
-                header('Location: /Login/Form');
-            }
+            $user = new user();
+            $user->setMail($_POST['mail']);
+            $user->setPassword($_POST['password']);
+            $result = $user->checkLogin();
+            header('Location: /Login/Form');
+
+            $role=  $user->checkRole();
+            $_SESSION['login'] = array(
+                'role'  => [role]
+            );
+            header('Location: /AdminPost/List');
+
         } else{
             throw new \Exception('Absence de formulaire pour cette action !');
         }

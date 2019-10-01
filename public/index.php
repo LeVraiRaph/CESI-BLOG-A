@@ -1,22 +1,32 @@
 <?php
 session_start();
 require '../vendor/autoload.php';
+
+
+
 function chargerClasse($classe)
 {
     $ds = DIRECTORY_SEPARATOR;
     $dir = __DIR__.'\\..';
     // Remplacement des séparateur Namespace
     $className = str_replace('\\', $ds, $classe);
-
     $file = "{$dir}{$ds}{$className}.php";
     if (is_readable($file)) require_once $file;
 }
+
+
+
 // enregistrement de la fonction "chargerClasse" sur une instanciation de classe
 spl_autoload_register('chargerClasse');
+
+
 
 $controller = (isset($_GET['controller'])) ? $_GET['controller'] : '';
 $action = (isset($_GET['action'])) ? $_GET['action'] : '';
 $param = (isset($_GET['param'])) ? $_GET['param'] : '';
+
+
+
 
 if($controller <> ''){
     try {
