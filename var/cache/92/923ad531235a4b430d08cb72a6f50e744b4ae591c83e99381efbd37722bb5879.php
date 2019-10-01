@@ -70,6 +70,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
+            </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -80,9 +83,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <div class=\"container\">
 
     ";
-        // line 36
+        // line 39
         $this->displayBlock('body', $context, $blocks);
-        // line 37
+        // line 40
         echo "
 </div>
 
@@ -93,9 +96,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 46
+        // line 49
         $this->displayBlock('javascript', $context, $blocks);
-        // line 47
+        // line 50
         echo "</body>
 </html>";
     }
@@ -113,13 +116,13 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         $macros = $this->macros;
     }
 
-    // line 36
+    // line 39
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 46
+    // line 49
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +135,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 
     public function getDebugInfo()
     {
-        return array (  123 => 46,  117 => 36,  111 => 10,  104 => 5,  99 => 47,  97 => 46,  86 => 37,  84 => 36,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  126 => 49,  120 => 39,  114 => 10,  107 => 5,  102 => 50,  100 => 49,  89 => 40,  87 => 39,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -162,6 +165,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
             </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
