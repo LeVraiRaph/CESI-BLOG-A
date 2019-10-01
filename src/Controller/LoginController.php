@@ -46,7 +46,7 @@ class LoginController extends AbstractController {
 
             $role=  $user->checkRole();
             $_SESSION['login'] = array(
-                'role'  => [role]
+                'role'  => [$role]
             );
             header('Location: /AdminPost/List');
 

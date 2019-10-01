@@ -57,7 +57,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
         $macros = $this->macros;
         // line 5
         echo "
-<h1>Mon Profil</h1>
+    <h1>Mon Profil</h1>
 
 ";
     }
@@ -84,7 +84,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 
 {% block body %}
 
-<h1>Mon Profil</h1>
+    <h1>Mon Profil</h1>
 
 {% endblock %}", "Compte/compte.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\Compte\\compte.html.twig");
     }

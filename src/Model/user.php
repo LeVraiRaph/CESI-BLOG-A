@@ -80,6 +80,11 @@ class user {
 
         ]);
     }
+    
+    public function checkLogin()
+    {
+      
+    }
 
     
 

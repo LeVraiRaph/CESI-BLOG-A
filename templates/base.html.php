@@ -24,7 +24,7 @@
                     <a class="nav-link" href="/Contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Compte/compte>Mon Compte</a>
+                    <a class="nav-link" href="/Compte/compte">Mon Compte</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" method="post" action="/Post/List">
