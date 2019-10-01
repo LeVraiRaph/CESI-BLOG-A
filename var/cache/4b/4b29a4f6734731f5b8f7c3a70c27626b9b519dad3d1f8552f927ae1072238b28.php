@@ -74,7 +74,7 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
         echo "
                 <form class=\"form-signin\" name=\"authentification\" action=\"/Login/Check\" method=\"POST\">
                     <div class=\"form-label-group\">
-                        <input type=\"email\" name=\"mail\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"";
+                        <input type=\"text\" name=\"login\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"";
         // line 16
         echo twig_escape_filter($this->env, (($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = ($context["arrayRememberMe"] ?? null)) && is_array($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) || $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 instanceof ArrayAccess ? ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4[0] ?? null) : null), "html", null, true);
         echo "\">
@@ -148,7 +148,7 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
 
                 <form class=\"form-signin\" name=\"authentification\" action=\"/Login/Check\" method=\"POST\">
                     <div class=\"form-label-group\">
-                        <input type=\"email\" name=\"mail\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"{{ arrayRememberMe[0] }}\">
+                        <input type=\"text\" name=\"login\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"{{ arrayRememberMe[0] }}\">
                         <label for=\"inputLogin\">Votre Identifiant</label>
                     </div>
 
