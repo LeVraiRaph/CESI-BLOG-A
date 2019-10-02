@@ -70,9 +70,11 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
+            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
             </li>
+            <?php } ?>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -83,9 +85,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <div class=\"container\">
 
     ";
-        // line 39
+        // line 41
         $this->displayBlock('body', $context, $blocks);
-        // line 40
+        // line 42
         echo "
 </div>
 
@@ -96,9 +98,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 49
+        // line 51
         $this->displayBlock('javascript', $context, $blocks);
-        // line 50
+        // line 52
         echo "</body>
 </html>";
     }
@@ -116,13 +118,13 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         $macros = $this->macros;
     }
 
-    // line 39
+    // line 41
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 49
+    // line 51
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -135,7 +137,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 
     public function getDebugInfo()
     {
-        return array (  126 => 49,  120 => 39,  114 => 10,  107 => 5,  102 => 50,  100 => 49,  89 => 40,  87 => 39,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  128 => 51,  122 => 41,  116 => 10,  109 => 5,  104 => 52,  102 => 51,  91 => 42,  89 => 41,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -166,9 +168,11 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
+            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
             </li>
+            <?php } ?>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
