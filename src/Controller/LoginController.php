@@ -19,13 +19,13 @@ class LoginController extends AbstractController {
     }
 
     /**
-     * Formulaire de connexion
+     * Formulaire d'inscription
      */
     public function Register(){
         if($_POST){
             $user = new user();
-            $user->setMail($_POST['mail']);
-            $user->setPassword($_POST['password']);
+            $user->setMail($_POST['Mail']);
+            $user->setPassword($_POST['Password']);
             $user->add();
             header('Location: /Login/Form');
         }
@@ -39,22 +39,35 @@ class LoginController extends AbstractController {
     public function Check(){
         if($_POST){
             $user = new user();
-            $user->setMail($_POST['mail']);
-            $user->setPassword($_POST['password']);
+            $user->setMail($_POST['Mail']);
+            $user->setPassword($_POST['Password']);
             $result = $user->checkLogin();
-            header('Location: /Login/Form');
-
-            $role=  $user->checkRole();
-            $_SESSION['login'] = array(
-                'role'  => [role]
-            );
-            header('Location: /AdminPost/List');
+            if ($result = true) {
+                $resultrole = $user->checkRole();
+                $_SESSION['login']['role'] = [$resultrole];
+                switch ($resultrole) {
+                    case "admin":
+                        header('Location: /AdminPost/List');
+                        break;
+                    case "user":
+                        header('Location: /Post/List');
+                        break;
+                    case "redacteur":
+                        header('Location: /RedacteurPost/List');
+                        break;
+                    default:
+                        header('Location: /Login/Form');
+                }
+            } else {
+                header('Location: /Error');
+            }
 
         } else{
             throw new \Exception('Absence de formulaire pour cette action !');
         }
 
     }
+
 
     /**
      * Logout de l'application

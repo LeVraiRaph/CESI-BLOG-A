@@ -24,9 +24,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="/Contact">Contact</a>
             </li>
+            <?php if ($isConnected == true) { ?>
             <li class="nav-item">
                 <a class="nav-link" href="/Compte/compte">Mon Compte</a>
             </li>
+            <?php } ?>
         </ul>
         <form class="form-inline my-2 my-lg-0" method="post" action="/Post/List">
             <input class="form-control mr-sm-2" type="search" placeholder="Rechercher un article" aria-label="Search" name="search">

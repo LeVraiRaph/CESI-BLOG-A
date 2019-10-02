@@ -25,7 +25,6 @@ class user {
     public function setPassword($password)
     {
         $this->password = $password;
-
         return $this;
     }
 
@@ -73,14 +72,36 @@ class user {
     {
         var_dump($this);
         $bdd = Bdd::getInstance();
-        $requete = $bdd->prepare('INSERT INTO utilisateurs (mail, password) VALUES(:mail, :password)');
+        $requete = $bdd->prepare('INSERT INTO utilisateurs (Mail, Password) VALUES(:Mail, :Password)');
         $requete->execute([
-            'mail' => $this->getMail()
-            ,'password' => $this->getPassword()
-
+            'Mail' => $this->getMail()
+            ,'Password' => $this->getPassword()
         ]);
     }
 
-    
+    public function checkLogin()
+    {
+        $bdd = Bdd::getInstance();
+        $requete = $bdd->prepare('SELECT Password FROM utilisateurs WHERE Mail = :Mail');
+        $requete->execute(['Mail' => $this->getMail()]);
+        $datas = $requete->fetch();
+        if ($this->getPassword() == $datas['Password']) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    public function checkRole()
+    {
+        $bdd = Bdd::getInstance();
+        $requete = $bdd->prepare('SELECT Role FROM utilisateurs WHERE Mail = :Mail');
+        $requete->execute(['Mail' => $this->getMail()]);
+        $datas = $requete->fetch();
+        var_dump($requete);
+        return $datas['Role'];
+    }
+
 
 }
