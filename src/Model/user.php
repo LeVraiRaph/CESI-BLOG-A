@@ -78,6 +78,7 @@ class user {
             ,'Password' => $this->getPassword()
         ]);
     }
+<<<<<<< HEAD
 
     public function checkLogin()
     {
@@ -104,4 +105,6 @@ class user {
     }
 
 
+=======
+>>>>>>> 6947c51c65263b30afb5c966d4bea7b2bd02212c
 }
