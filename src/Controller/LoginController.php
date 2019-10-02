@@ -42,7 +42,6 @@ class LoginController extends AbstractController {
             $user->setMail($_POST['Mail']);
             $user->setPassword($_POST['Password']);
             $result = $user->checkLogin();
-<<<<<<< HEAD
             if ($result = true) {
                 $resultrole = $user->checkRole();
                 $_SESSION['login']['role'] = [$resultrole];
@@ -62,15 +61,6 @@ class LoginController extends AbstractController {
             } else {
                 header('Location: /Error');
             }
-=======
-            header('Location: /Login/Form');
-
-            $role=  $user->checkRole();
-            $_SESSION['login'] = array(
-                'role'  => [$role]
-            );
-            header('Location: /AdminPost/List');
->>>>>>> 6947c51c65263b30afb5c966d4bea7b2bd02212c
 
         } else{
             throw new \Exception('Absence de formulaire pour cette action !');
