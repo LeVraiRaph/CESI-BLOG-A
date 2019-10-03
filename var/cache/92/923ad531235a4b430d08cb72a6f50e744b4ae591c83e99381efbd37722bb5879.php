@@ -51,11 +51,10 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
-    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
     ";
-        // line 12
+        // line 11
         $this->displayBlock('css', $context, $blocks);
-        // line 13
+        // line 12
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
@@ -72,11 +71,12 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
-            <?php } ?>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -99,17 +99,10 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#postDescription' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
 ";
-        // line 60
+        // line 53
         $this->displayBlock('javascript', $context, $blocks);
-        // line 61
+        // line 54
         echo "</body>
 </html>";
     }
@@ -121,7 +114,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         echo "CESI BLOG";
     }
 
-    // line 12
+    // line 11
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -133,7 +126,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         $macros = $this->macros;
     }
 
-    // line 60
+    // line 53
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -146,7 +139,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 
     public function getDebugInfo()
     {
-        return array (  137 => 60,  131 => 43,  125 => 12,  118 => 5,  113 => 61,  111 => 60,  93 => 44,  91 => 43,  59 => 13,  57 => 12,  47 => 5,  41 => 1,);
+        return array (  130 => 53,  124 => 43,  118 => 11,  111 => 5,  106 => 54,  104 => 53,  93 => 44,  91 => 43,  58 => 12,  56 => 11,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -161,7 +154,6 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
-    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
     {% block css %}{% endblock %}
 
 <body>
@@ -179,11 +171,12 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
-            <?php } ?>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -203,13 +196,6 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#postDescription' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
 {% block javascript %}{% endblock %}
 </body>
 </html>", "base.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\base.html.twig");

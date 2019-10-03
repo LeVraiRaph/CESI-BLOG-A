@@ -57,7 +57,27 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
         $macros = $this->macros;
         // line 5
         echo "
-    <h1>Mon Profil</h1>
+    <div class=\"jumbotron\">
+        <h1>Mon Profil</h1> 
+        <div class=\"row\">
+            <div class=\"col-10\">
+                <ul class=\"list-group\">
+                    <li class=\"list-group-item\">";
+        // line 11
+        echo twig_escape_filter($this->env, ($context["nom"] ?? null), "html", null, true);
+        echo "</li>
+                    <li class=\"list-group-item\">";
+        // line 12
+        echo twig_escape_filter($this->env, ($context["prenom"] ?? null), "html", null, true);
+        echo "</li>
+                    <li class=\"list-group-item\">";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["role"] ?? null), "html", null, true);
+        echo "</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 ";
     }
@@ -74,7 +94,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 
     public function getDebugInfo()
     {
-        return array (  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  75 => 13,  71 => 12,  67 => 11,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -84,7 +104,18 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 
 {% block body %}
 
-    <h1>Mon Profil</h1>
+    <div class=\"jumbotron\">
+        <h1>Mon Profil</h1> 
+        <div class=\"row\">
+            <div class=\"col-10\">
+                <ul class=\"list-group\">
+                    <li class=\"list-group-item\">{{ nom }}</li>
+                    <li class=\"list-group-item\">{{ prenom }}</li>
+                    <li class=\"list-group-item\">{{ role }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}", "Compte/compte.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\Compte\\compte.html.twig");
     }
