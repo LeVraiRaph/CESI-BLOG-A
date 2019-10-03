@@ -28,7 +28,6 @@ $param = (isset($_GET['param'])) ? $_GET['param'] : '';
 
 
 
-
 if($controller <> ''){
     try {
         $class = 'src\Controller\\'.$controller.'Controller';

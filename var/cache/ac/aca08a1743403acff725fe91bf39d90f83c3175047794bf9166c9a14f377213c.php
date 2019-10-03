@@ -70,11 +70,12 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
-            <?php } ?>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -85,9 +86,9 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
 <div class=\"container\">
 
     ";
-        // line 41
-        $this->displayBlock('body', $context, $blocks);
         // line 42
+        $this->displayBlock('body', $context, $blocks);
+        // line 43
         echo "
 </div>
 
@@ -98,9 +99,9 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 51
-        $this->displayBlock('javascript', $context, $blocks);
         // line 52
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 53
         echo "</body>
 </html>";
     }
@@ -118,13 +119,13 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
         $macros = $this->macros;
     }
 
-    // line 41
+    // line 42
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 51
+    // line 52
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,7 +138,7 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
 
     public function getDebugInfo()
     {
-        return array (  128 => 51,  122 => 41,  116 => 10,  109 => 5,  104 => 52,  102 => 51,  91 => 42,  89 => 41,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  129 => 52,  123 => 42,  117 => 10,  110 => 5,  105 => 53,  103 => 52,  92 => 43,  90 => 42,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -168,11 +169,12 @@ class __TwigTemplate_75791716a65318f7f7e328ff0b77724627a99567439ac94ef66aaafd15c
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
-            <?php } ?>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
