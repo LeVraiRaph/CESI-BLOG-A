@@ -52,11 +52,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     ";
         // line 11
-        echo "    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
-    ";
-        // line 12
+        echo "        ";
         $this->displayBlock('css', $context, $blocks);
-        // line 13
+        // line 12
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
@@ -93,9 +91,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <div class=\"container\">
 
     ";
-        // line 48
+        // line 47
         $this->displayBlock('body', $context, $blocks);
-        // line 49
+        // line 48
         echo "
 </div>
 
@@ -105,6 +103,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#postDescription' ) )
@@ -127,13 +126,13 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         echo "ADMIN";
     }
 
-    // line 12
+    // line 11
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 48
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -152,7 +151,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 
     public function getDebugInfo()
     {
-        return array (  143 => 65,  137 => 48,  131 => 12,  124 => 5,  119 => 66,  117 => 65,  99 => 49,  97 => 48,  60 => 13,  58 => 12,  55 => 11,  47 => 5,  41 => 1,);
+        return array (  142 => 65,  136 => 47,  130 => 11,  123 => 5,  118 => 66,  116 => 65,  97 => 48,  95 => 47,  58 => 12,  55 => 11,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -167,8 +166,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     {# <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script> #}
-    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
-    {% block css %}{% endblock %}
+        {% block css %}{% endblock %}
 
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
@@ -214,6 +212,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#postDescription' ) )

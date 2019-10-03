@@ -57,7 +57,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
         $macros = $this->macros;
         // line 5
         echo "
-    <div class=\"jumbotron\">
+    <div class=\"jumbotron\" style=\"margin-top: 100px;\">
         <h1>Mon Profil</h1> 
         <div class=\"row\">
             <div class=\"col-10\">
@@ -104,7 +104,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 
 {% block body %}
 
-    <div class=\"jumbotron\">
+    <div class=\"jumbotron\" style=\"margin-top: 100px;\">
         <h1>Mon Profil</h1> 
         <div class=\"row\">
             <div class=\"col-10\">
