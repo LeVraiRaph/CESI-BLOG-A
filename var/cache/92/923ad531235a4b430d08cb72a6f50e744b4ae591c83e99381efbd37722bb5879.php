@@ -50,10 +50,12 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
     ";
-        // line 10
+        // line 12
         $this->displayBlock('css', $context, $blocks);
-        // line 11
+        // line 13
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
@@ -85,9 +87,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <div class=\"container\">
 
     ";
-        // line 41
+        // line 43
         $this->displayBlock('body', $context, $blocks);
-        // line 42
+        // line 44
         echo "
 </div>
 
@@ -97,10 +99,17 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 ";
-        // line 51
+        // line 60
         $this->displayBlock('javascript', $context, $blocks);
-        // line 52
+        // line 61
         echo "</body>
 </html>";
     }
@@ -112,19 +121,19 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         echo "CESI BLOG";
     }
 
-    // line 10
+    // line 12
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 41
+    // line 43
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 51
+    // line 60
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,7 +146,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 
     public function getDebugInfo()
     {
-        return array (  128 => 51,  122 => 41,  116 => 10,  109 => 5,  104 => 52,  102 => 51,  91 => 42,  89 => 41,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  137 => 60,  131 => 43,  125 => 12,  118 => 5,  113 => 61,  111 => 60,  93 => 44,  91 => 43,  59 => 13,  57 => 12,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -151,6 +160,8 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
     {% block css %}{% endblock %}
 
 <body>
@@ -192,6 +203,13 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 {% block javascript %}{% endblock %}
 </body>
 </html>", "base.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\base.html.twig");

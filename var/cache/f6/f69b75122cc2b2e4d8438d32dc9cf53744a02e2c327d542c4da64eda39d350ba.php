@@ -51,9 +51,12 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     ";
-        // line 10
-        $this->displayBlock('css', $context, $blocks);
         // line 11
+        echo "    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+    ";
+        // line 12
+        $this->displayBlock('css', $context, $blocks);
+        // line 13
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
@@ -90,9 +93,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <div class=\"container\">
 
     ";
-        // line 46
+        // line 48
         $this->displayBlock('body', $context, $blocks);
-        // line 47
+        // line 49
         echo "
 </div>
 
@@ -102,7 +105,6 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#postDescription' ) )
@@ -111,9 +113,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         } );
 </script>
 ";
-        // line 64
-        $this->displayBlock('javascript', $context, $blocks);
         // line 65
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 66
         echo "</body>
 </html>";
     }
@@ -125,19 +127,19 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         echo "ADMIN";
     }
 
-    // line 10
+    // line 12
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 46
+    // line 48
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 64
+    // line 65
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -150,7 +152,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 
     public function getDebugInfo()
     {
-        return array (  141 => 64,  135 => 46,  129 => 10,  122 => 5,  117 => 65,  115 => 64,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  143 => 65,  137 => 48,  131 => 12,  124 => 5,  119 => 66,  117 => 65,  99 => 49,  97 => 48,  60 => 13,  58 => 12,  55 => 11,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -164,6 +166,8 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    {# <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script> #}
+    <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
     {% block css %}{% endblock %}
 
 <body>
@@ -210,7 +214,6 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#postDescription' ) )

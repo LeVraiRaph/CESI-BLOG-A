@@ -105,13 +105,15 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
         echo " class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <div class=\"g-recaptcha\" data-sitekey=\"6LejubsUAAAAAOmToSpxEbyD8UmMvXrINRbJbp0B\"></div>
+                    
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" style=\"margin-top: 15px;\" type=\"submit\">Sign in</button>
                 </form>
             </div>
         </div>
     </div>
     </div>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 ";
     }
@@ -163,13 +165,15 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
                         <input type=\"checkbox\" {{ checked }} class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <div class=\"g-recaptcha\" data-sitekey=\"6LejubsUAAAAAOmToSpxEbyD8UmMvXrINRbJbp0B\"></div>
+                    
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" style=\"margin-top: 15px;\" type=\"submit\">Sign in</button>
                 </form>
             </div>
         </div>
     </div>
     </div>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 {% endblock %}", "Login/form.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\Login\\form.html.twig");
     }
