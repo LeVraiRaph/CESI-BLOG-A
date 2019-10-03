@@ -6,6 +6,9 @@ class user {
     protected $id;
     protected $mail;
     protected $password;
+    protected $nom;
+    protected $prenom;
+    protected $role;
 
 
 
@@ -68,6 +71,70 @@ class user {
         return $this;
     }
 
+    /**
+     * Get the value of nom
+     */ 
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set the value of nom
+     *
+     * @return  self
+     */ 
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+     /**
+     * Get the value of prenom
+     */ 
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * Set the value of nom
+     *
+     * @return  self
+     */ 
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of role
+     */ 
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * Set the value of role
+     *
+     * @return  self
+     */ 
+    public function setRole($role)
+    {
+        $this->role = $role;
+
+        return $this;
+    }
+
+
+
+
+
     public function add()
     {
         var_dump($this);
@@ -99,9 +166,38 @@ class user {
         $requete = $bdd->prepare('SELECT Role FROM utilisateurs WHERE Mail = :Mail');
         $requete->execute(['Mail' => $this->getMail()]);
         $datas = $requete->fetch();
-        var_dump($requete);
         return $datas['Role'];
     }
 
 
+    public function getNomSession()
+    {
+        $bdd = Bdd::getInstance();
+        $mailsession = $_SESSION["login"]["mail"];
+        $requete = $bdd->prepare('SELECT * FROM utilisateurs WHERE Mail = :Mailsession');
+        $requete->execute(['Mailsession' => $mailsession]);
+        $nomsession = $requete->fetch();
+        return $nomsession['Nom'];
+    }
+
+    public function getPrenomSession()
+    {
+        $bdd = Bdd::getInstance();
+        $mailsession = $_SESSION["login"]["mail"];
+        $requete = $bdd->prepare('SELECT * FROM utilisateurs WHERE Mail = :Mailsession');
+        $requete->execute(['Mailsession' => $mailsession]);
+        $prenomsession = $requete->fetch();
+        return $prenomsession['Prenom'];
+    }
+
+    public function getRoleSession()
+    {
+        $bdd = Bdd::getInstance();
+        $mailsession = $_SESSION["login"]["mail"];
+        $requete = $bdd->prepare('SELECT * FROM utilisateurs WHERE Mail = :Mailsession');
+        $requete->execute(['Mailsession' => $mailsession]);
+        $rolesession = $requete->fetch();
+        return $rolesession['Role'];
+    }
+    
 }

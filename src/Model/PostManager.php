@@ -153,4 +153,10 @@ class PostManager {
         $requete->execute();
         return $requete->fetch();
     }
+
+    public function getList5() {
+        $requete = $this->db->prepare('SELECT * from posts ORDER BY DateAjout DESC LIMIT 5');
+        $requete->execute();
+        return $requete->fetch();
+    }
 }

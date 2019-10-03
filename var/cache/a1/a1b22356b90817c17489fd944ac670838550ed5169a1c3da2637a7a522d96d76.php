@@ -237,7 +237,7 @@ class __TwigTemplate_f1c1f9aecd2dd734e2ef45f8dec33e02e4d53ddcabe36949dcca4b931a9
             <p class=\"lead my-3\">Ce blog vous présentera les tendances actuelles des langages de programmation, ainsi que de nombreuses astuces dans tous les langages</p>
         </div>
     </div>
-    {% if maxPage > 0  %}
+    {% if maxPage > 0 %}
         <nav aria-label=\"Page navigation example\">
         <ul class=\"pagination justify-content-center\">
             {# Bouton précédent #}
