@@ -44,7 +44,10 @@ class LoginController extends AbstractController {
             $result = $user->checkLogin();
             if ($result = true) {
                 $resultrole = $user->checkRole();
-                $_SESSION['login']['role'] = [$resultrole];
+                $_SESSION['login'] = [
+                    'role' => [$resultrole],
+                    'mail' => $user->getMail()
+                ];
                 switch ($resultrole) {
                     case "admin":
                         header('Location: /AdminPost/List');

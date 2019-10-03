@@ -28,7 +28,7 @@ class PostController extends AbstractController {
                 $dataPosts = $postManager->getPagination(1,$nbArticleParPage );
             }
         }
-
+ 
         // Get Max Post, and Max Page
         $maxResult = $postManager->getMaxPost();
         $maxPost = $maxResult['Total'];

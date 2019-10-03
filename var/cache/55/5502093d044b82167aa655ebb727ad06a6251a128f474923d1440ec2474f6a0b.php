@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* RedacteurPost/list.html.twig */
-class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2ec43e extends \Twig\Template
+/* Post/list5.html.twig */
+class __TwigTemplate_2c4a7ebb59075fab944fae6c206b384dd535a5c731b96c6980636a1ffe97e4d5 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -39,7 +39,7 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        $this->parent = $this->loadTemplate("base.html.twig", "RedacteurPost/list.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "Post/list5.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -48,7 +48,7 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
     {
         $macros = $this->macros;
         $this->displayParentBlock("title", $context, $blocks);
-        echo " - Contact ";
+        echo " - Liste des Posts ";
     }
 
     // line 4
@@ -57,25 +57,14 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
         $macros = $this->macros;
         // line 5
         echo "
-    <div class=\"jumbotron\">
-        <h1>Bienvenue monsieur le rédacteur</h1> 
-        <div class=\"row\">
-            <div class=\"col-10\">
-                <ul class=\"list-group\">
-                    <li>ouai</li>
-                    <li>ouai</li>
-                    <li>ouai</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+Bouh 5
 
 ";
     }
 
     public function getTemplateName()
     {
-        return "RedacteurPost/list.html.twig";
+        return "Post/list5.html.twig";
     }
 
     public function isTraitable()
@@ -91,23 +80,12 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
     public function getSourceContext()
     {
         return new Source("{% extends \"base.html.twig\" %}
-{% block title %}{{ parent() }} - Contact {% endblock %}
+{% block title %}{{ parent() }} - Liste des Posts {% endblock %}
 
 {% block body %}
 
-    <div class=\"jumbotron\">
-        <h1>Bienvenue monsieur le rédacteur</h1> 
-        <div class=\"row\">
-            <div class=\"col-10\">
-                <ul class=\"list-group\">
-                    <li>ouai</li>
-                    <li>ouai</li>
-                    <li>ouai</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+Bouh 5
 
-{% endblock %}", "RedacteurPost/list.html.twig", "C:\\wamp64\\www\\cesiblog\\CESI-BLOG-A\\templates\\RedacteurPost\\list.html.twig");
+{% endblock %}", "Post/list5.html.twig", "C:\\wamp64\\www\\cesiblog\\CESI-BLOG-A\\templates\\Post\\list5.html.twig");
     }
 }

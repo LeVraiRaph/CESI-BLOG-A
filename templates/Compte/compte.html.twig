@@ -3,6 +3,17 @@
 
 {% block body %}
 
-    <h1>Mon Profil</h1>
+    <div class="jumbotron">
+        <h1>Mon Profil</h1> 
+        <div class="row">
+            <div class="col-10">
+                <ul class="list-group">
+                    <li class="list-group-item">{{ nom }}</li>
+                    <li class="list-group-item">{{ prenom }}</li>
+                    <li class="list-group-item">{{ role }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

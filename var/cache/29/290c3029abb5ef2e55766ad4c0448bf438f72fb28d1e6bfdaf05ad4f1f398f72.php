@@ -102,10 +102,18 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 ";
-        // line 56
+        // line 64
         $this->displayBlock('javascript', $context, $blocks);
-        // line 57
+        // line 65
         echo "</body>
 </html>";
     }
@@ -129,7 +137,7 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
         $macros = $this->macros;
     }
 
-    // line 56
+    // line 64
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -142,7 +150,7 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 
     public function getDebugInfo()
     {
-        return array (  133 => 56,  127 => 46,  121 => 10,  114 => 5,  109 => 57,  107 => 56,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  141 => 64,  135 => 46,  129 => 10,  122 => 5,  117 => 65,  115 => 64,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -202,6 +210,14 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 {% block javascript %}{% endblock %}
 </body>
 </html>", "base.admin.html.twig", "C:\\wamp64\\www\\cesiblog\\CESI-BLOG-A\\templates\\base.admin.html.twig");
