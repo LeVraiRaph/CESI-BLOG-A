@@ -57,7 +57,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         // line 12
         echo "
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -69,13 +69,13 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
@@ -157,7 +157,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     {% block css %}{% endblock %}
 
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -169,13 +169,13 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
