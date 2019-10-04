@@ -58,7 +58,7 @@ class __TwigTemplate_b128b690701deb66620d80b42514d4b4533b692ed1fe6aa315e395b1122
         // line 5
         echo "
     <div class=\"jumbotron\">
-        <h1 class=\"display-4\">Liste des articles</h1>
+        <h1 class=\"display-4\">Liste</h1>
         <form name=\"recherche\" method=\"POST\" class=\"form-inline my-2 my-lg-0\">
             <div class=\"col-2\">
                 <input class=\"form-control mr-sm-2\" name=\"search\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
@@ -154,7 +154,7 @@ class __TwigTemplate_b128b690701deb66620d80b42514d4b4533b692ed1fe6aa315e395b1122
 {% block body %}
 
     <div class=\"jumbotron\">
-        <h1 class=\"display-4\">Liste des articles</h1>
+        <h1 class=\"display-4\">Liste</h1>
         <form name=\"recherche\" method=\"POST\" class=\"form-inline my-2 my-lg-0\">
             <div class=\"col-2\">
                 <input class=\"form-control mr-sm-2\" name=\"search\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">

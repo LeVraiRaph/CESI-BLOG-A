@@ -68,6 +68,7 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
                     Gestion des articles
                 </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/AdminCategory/List\">Categories</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/List\">Liste</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/Add\">Ajout</a>
                 </div>
@@ -90,9 +91,9 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
 <div class=\"container\">
 
     ";
-        // line 46
-        $this->displayBlock('body', $context, $blocks);
         // line 47
+        $this->displayBlock('body', $context, $blocks);
+        // line 48
         echo "
 </div>
 
@@ -102,10 +103,18 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 ";
-        // line 56
+        // line 65
         $this->displayBlock('javascript', $context, $blocks);
-        // line 57
+        // line 66
         echo "</body>
 </html>";
     }
@@ -123,13 +132,13 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
         $macros = $this->macros;
     }
 
-    // line 46
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 56
+    // line 65
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -142,7 +151,7 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
 
     public function getDebugInfo()
     {
-        return array (  133 => 56,  127 => 46,  121 => 10,  114 => 5,  109 => 57,  107 => 56,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  142 => 65,  136 => 47,  130 => 10,  123 => 5,  118 => 66,  116 => 65,  97 => 48,  95 => 47,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -171,6 +180,7 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
                     Gestion des articles
                 </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/AdminCategory/List\">Categories</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/List\">Liste</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/Add\">Ajout</a>
                 </div>
@@ -202,6 +212,14 @@ class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf5
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#postDescription' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 {% block javascript %}{% endblock %}
 </body>
 </html>", "base.admin.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\base.admin.html.twig");

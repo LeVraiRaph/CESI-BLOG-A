@@ -1,5 +1,6 @@
 <?php
 namespace src\Model;
+use src\Model\Categories;
 
 class CategoryManager {
     /**
@@ -41,9 +42,9 @@ class CategoryManager {
 
     public function delete(Categories $categories){
         try{
-            $requete = $this->db->prepare('DELETE FROM categories WHERE Id=:id');
+            $requete = $this->db->prepare('DELETE FROM categories WHERE nom=:nom');
             $requete->execute([
-                'id' => $post->getId()
+                'nom' => $categories->getnom()
             ]);
 
             $return = [
@@ -61,7 +62,7 @@ class CategoryManager {
 
     public function update(Categories $categories){
         try{
-            $requete = $this->db->prepare('UPDATE categories set nom=:nom WHERE id=:categoriesId');
+            $requete = $this->db->prepare('UPDATE categories set nom=:nom WHERE nom=:nom');
             $requete->execute([
                 'nom' => $categories->getnom()
               
@@ -81,7 +82,7 @@ class CategoryManager {
     }
 
     public function get($id){
-        $requete = $this->db->prepare('SELECT * FROM categories where Id = :categoriesId');
+        $requete = $this->db->prepare('SELECT * FROM categories where categories = :categories');
         $requete->execute([
             'categoriesId' => $id
         ]);
@@ -90,15 +91,17 @@ class CategoryManager {
     }
 
     public function getAll(){
-        $posts = [];
+        $categoryList = [];
         $requete = $this->db->prepare('SELECT * FROM categories');
         $requete->execute();
         while ($donnees = $requete->fetch(\PDO::FETCH_ASSOC))
         {
-            $categories[] = new Categories($donnees);
+            $categorie = new Categories();
+            $categorie->setNom($donnees['Nom']);
+            $categoryList[] = $categorie;
         }
 
-        return $categories;
+        return $categoryList;
     }
 
     /**
@@ -120,28 +123,5 @@ class CategoryManager {
         return $posts;
     }
 
-    /**
-     * @param $limit
-     * @param $nbArticleParPage
-     * @return Post[]
-     */
-    public function getPagination($limit,$nbArticleParPage):array{
-        $posts = [];
-        $requete = $this->db->prepare('SELECT * FROM posts ORDER BY DateAjout DESC LIMIT :limit, :maxresult');
-        $requete->bindValue(':limit', $limit, \PDO::PARAM_INT);
-        $requete->bindValue(':maxresult', $nbArticleParPage, \PDO::PARAM_INT);
-        $requete->execute();
-        while ($donnees = $requete->fetch(\PDO::FETCH_ASSOC))
-        {
-            $posts[] = new Post($donnees);
-        }
-
-        return $posts;
-    }
-
-    public function getMaxPost():array {
-        $requete = $this->db->prepare('SELECT count(*) as Total FROM posts');
-        $requete->execute();
-        return $requete->fetch();
-    }
+    
 }

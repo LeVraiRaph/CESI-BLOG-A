@@ -74,7 +74,7 @@ class __TwigTemplate_9f2c3a010bcfc2c0f0966c775e10a4e1e75cb2ba94ca2e30eb58153a8f4
         echo "
                 <form class=\"form-signin\" name=\"authentification\" action=\"/Login/Check\" method=\"POST\">
                     <div class=\"form-label-group\">
-                        <input type=\"text\" name=\"login\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"";
+                        <input type=\"email\" name=\"Mail\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"";
         // line 16
         echo twig_escape_filter($this->env, (($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = ($context["arrayRememberMe"] ?? null)) && is_array($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) || $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 instanceof ArrayAccess ? ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4[0] ?? null) : null), "html", null, true);
         echo "\">
@@ -82,7 +82,7 @@ class __TwigTemplate_9f2c3a010bcfc2c0f0966c775e10a4e1e75cb2ba94ca2e30eb58153a8f4
                     </div>
 
                     <div class=\"form-label-group\">
-                        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required value=\"";
+                        <input type=\"password\" name=\"Password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required value=\"";
         // line 21
         echo twig_escape_filter($this->env, (($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = ($context["arrayRememberMe"] ?? null)) && is_array($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144) || $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 instanceof ArrayAccess ? ($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144[1] ?? null) : null), "html", null, true);
         echo "\">
@@ -148,12 +148,12 @@ class __TwigTemplate_9f2c3a010bcfc2c0f0966c775e10a4e1e75cb2ba94ca2e30eb58153a8f4
 
                 <form class=\"form-signin\" name=\"authentification\" action=\"/Login/Check\" method=\"POST\">
                     <div class=\"form-label-group\">
-                        <input type=\"text\" name=\"login\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"{{ arrayRememberMe[0] }}\">
+                        <input type=\"email\" name=\"Mail\" id=\"inputLogin\" class=\"form-control\" placeholder=\"Identifiant\" required autofocus value=\"{{ arrayRememberMe[0] }}\">
                         <label for=\"inputLogin\">Votre Identifiant</label>
                     </div>
 
                     <div class=\"form-label-group\">
-                        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required value=\"{{ arrayRememberMe[1] }}\">
+                        <input type=\"password\" name=\"Password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required value=\"{{ arrayRememberMe[1] }}\">
                         <label for=\"inputPassword\">Password</label>
                     </div>
 
