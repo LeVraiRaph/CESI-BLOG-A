@@ -78,7 +78,7 @@ class __TwigTemplate_9f6a4eef3b7379df319e33d7bc5310fb6c362e8316629c7800a1f45b3e6
         echo "</li>
                     <li class=\"list-group-item\">";
         // line 14
-        echo nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Description", [], "any", false, false, false, 14), "html", null, true));
+        echo nl2br(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Description", [], "any", false, false, false, 14));
         echo "</li>
                 </ul>
             </div>
@@ -136,7 +136,7 @@ class __TwigTemplate_9f6a4eef3b7379df319e33d7bc5310fb6c362e8316629c7800a1f45b3e6
                     <li class=\"list-group-item active\">{{ post.Titre }}</li>
                     <li class=\"list-group-item\">Ecrit par : {{ post.Auteur }}</li>
                     <li class=\"list-group-item\">Ecrit le : {{ post.DateAjout|date(\"d/m/Y\") }}</li>
-                    <li class=\"list-group-item\">{{ post.Description|nl2br }}</li>
+                    <li class=\"list-group-item\">{{ post.Description|raw|nl2br }}</li>
                 </ul>
             </div>
             <div class=\"col-6\">

@@ -54,6 +54,9 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+{# Ajout du plugin WYSIWYG pour les ajouts d'articles #}
 <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
 <script>
     ClassicEditor
@@ -62,6 +65,7 @@
             console.error( error );
         } );
 </script>
+{# Fin de l'ajout du plugin #}
 {% block javascript %}{% endblock %}
 </body>
 </html>

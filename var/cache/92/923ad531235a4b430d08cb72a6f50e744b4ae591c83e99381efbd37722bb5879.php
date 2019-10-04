@@ -50,13 +50,14 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
     ";
-        // line 10
-        $this->displayBlock('css', $context, $blocks);
         // line 11
+        $this->displayBlock('css', $context, $blocks);
+        // line 12
         echo "
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -68,13 +69,14 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
+            </li>
+            <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
-            </li>
-            <?php } ?>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">
@@ -85,9 +87,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <div class=\"container\">
 
     ";
-        // line 41
+        // line 43
         $this->displayBlock('body', $context, $blocks);
-        // line 42
+        // line 44
         echo "
 </div>
 
@@ -98,9 +100,9 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 51
+        // line 53
         $this->displayBlock('javascript', $context, $blocks);
-        // line 52
+        // line 54
         echo "</body>
 </html>";
     }
@@ -112,19 +114,19 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
         echo "CESI BLOG";
     }
 
-    // line 10
+    // line 11
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 41
+    // line 43
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 51
+    // line 53
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -137,7 +139,7 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
 
     public function getDebugInfo()
     {
-        return array (  128 => 51,  122 => 41,  116 => 10,  109 => 5,  104 => 52,  102 => 51,  91 => 42,  89 => 41,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  130 => 53,  124 => 43,  118 => 11,  111 => 5,  106 => 54,  104 => 53,  93 => 44,  91 => 43,  58 => 12,  56 => 11,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -151,10 +153,11 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
     {% block css %}{% endblock %}
 
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -166,13 +169,14 @@ class __TwigTemplate_db4122e77280760ce0943eff1684d24b1f26b264a7e986acd12457791ac
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
+            </li>
+            <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
-            <?php if (\$isConnected == true) { ?>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Compte/compte\">Mon Compte</a>
-            </li>
-            <?php } ?>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" aria-label=\"Search\" name=\"search\">

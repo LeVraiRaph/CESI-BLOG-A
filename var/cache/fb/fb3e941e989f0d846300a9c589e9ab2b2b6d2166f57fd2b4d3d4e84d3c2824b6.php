@@ -71,60 +71,63 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
 
             <div class=\"form-group\">
                 <label for=\"postDescription\">Description</label>
-                <textarea class=\"form-control\" id=\"postDescription editor\" name=\"postDescription\" rows=\"3\" placeholder=\"Description de l'article\">";
+                <textarea class=\"form-control\" id=\"postDescription\" name=\"postDescription\" rows=\"3\" placeholder=\"Description de l'article\">";
         // line 16
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Description", [], "any", false, false, false, 16), "html", null, true);
         echo "</textarea>
             </div>
 
+            <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+
+
             <div class=\"form-group\">
                 <label for=\"postAuteur\">Auteur</label>
                 <select class=\"form-control\" id=\"postAuteur\" name=\"postAuteur\">
                     <option value=\"Brice\" ";
-        // line 22
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 22) == "Brice")) {
+        // line 25
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 25) == "Brice")) {
             echo "selected=\"selected\"";
         }
         echo ">Brice</option>
                     <option value=\"Bruno\" ";
-        // line 23
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 23) == "Bruno")) {
+        // line 26
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 26) == "Bruno")) {
             echo "selected=\"selected\"";
         }
         echo ">Bruno</option>
                     <option value=\"Fabien\" ";
-        // line 24
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 24) == "Fabien")) {
+        // line 27
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 27) == "Fabien")) {
             echo "selected=\"selected\"";
         }
         echo ">Fabien</option>
                     <option value=\"Marion\" ";
-        // line 25
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 25) == "Marion")) {
+        // line 28
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 28) == "Marion")) {
             echo "selected=\"selected\"";
         }
         echo ">Marion</option>
                     <option value=\"Marion\" ";
-        // line 26
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 26) == "Emmanuel")) {
+        // line 29
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 29) == "Emmanuel")) {
             echo "selected=\"selected\"";
         }
         echo ">Emmanuel</option>
                     <option value=\"Marion\" ";
-        // line 27
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 27) == "Sylvie")) {
+        // line 30
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 30) == "Sylvie")) {
             echo "selected=\"selected\"";
         }
         echo ">Sylvie</option>
                     <option value=\"Marion\" ";
-        // line 28
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 28) == "Benoit")) {
+        // line 31
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 31) == "Benoit")) {
             echo "selected=\"selected\"";
         }
         echo ">Benoit</option>
                     <option value=\"Marion\" ";
-        // line 29
-        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 29) == "Jean-Pierre")) {
+        // line 32
+        if ((twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "Auteur", [], "any", false, false, false, 32) == "Jean-Pierre")) {
             echo "selected=\"selected\"";
         }
         echo ">Jean-Pierre</option>
@@ -133,8 +136,8 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
             <div class=\"form-group\">
                 <label for=\"postDate\">Date de l'article</label>
                 <input type=\"date\" class=\"form-control\" id=\"postDate\" name=\"postDate\" value=\"";
-        // line 34
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "DateAjout", [], "any", false, false, false, 34), "Y-m-d"), "html", null, true);
+        // line 37
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "DateAjout", [], "any", false, false, false, 37), "Y-m-d"), "html", null, true);
         echo "\" >
             </div>
             <div class=\"row\">
@@ -146,37 +149,38 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
                 </div>
                 <div class=\"col-6\">
                     ";
-        // line 44
-        if ((call_user_func_array($this->env->getFunction('file_exist')->getCallable(), [((("./uploads/images/" . twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 44)) . "/") . twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 44))]) && (twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 44) != ""))) {
-            // line 45
+        // line 47
+        if ((call_user_func_array($this->env->getFunction('file_exist')->getCallable(), [((("./uploads/images/" . twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 47)) . "/") . twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 47))]) && (twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 47) != ""))) {
+            // line 48
             echo "                        <img src=\"/uploads/images/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 45), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 48), "html", null, true);
             echo "/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 45), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 48), "html", null, true);
             echo "\" class=\"img-thumbnail\"/>
                     ";
         }
-        // line 47
+        // line 50
         echo "                </div>
             </div>
             <input type=\"hidden\" name=\"postImageFull\" id=\"postImageFull\" value=\"";
-        // line 49
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 49), "html", null, true);
+        // line 52
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageRepository", [], "any", false, false, false, 52), "html", null, true);
         echo "/";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 49), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "getImageFileName", [], "any", false, false, false, 52), "html", null, true);
         echo "\">
             <input type=\"hidden\" name=\"postId\" id=\"postID\" value=\"";
-        // line 50
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "id", [], "any", false, false, false, 50), "html", null, true);
+        // line 53
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "id", [], "any", false, false, false, 53), "html", null, true);
         echo "\">
             <input type=\"hidden\" name=\"token\" value=\"";
-        // line 51
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["session"] ?? null), "token", [], "any", false, false, false, 51), "html", null, true);
+        // line 54
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["session"] ?? null), "token", [], "any", false, false, false, 54), "html", null, true);
         echo "\">
             <button type=\"submit\" class=\"btn btn-primary\">Valider</button>
         </form>
     </div>
 
+    
 ";
     }
 
@@ -192,7 +196,7 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
 
     public function getDebugInfo()
     {
-        return array (  174 => 51,  170 => 50,  164 => 49,  160 => 47,  152 => 45,  150 => 44,  137 => 34,  127 => 29,  121 => 28,  115 => 27,  109 => 26,  103 => 25,  97 => 24,  91 => 23,  85 => 22,  76 => 16,  68 => 11,  60 => 5,  56 => 4,  47 => 2,  36 => 1,);
+        return array (  177 => 54,  173 => 53,  167 => 52,  163 => 50,  155 => 48,  153 => 47,  140 => 37,  130 => 32,  124 => 31,  118 => 30,  112 => 29,  106 => 28,  100 => 27,  94 => 26,  88 => 25,  76 => 16,  68 => 11,  60 => 5,  56 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -212,8 +216,11 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
 
             <div class=\"form-group\">
                 <label for=\"postDescription\">Description</label>
-                <textarea class=\"form-control\" id=\"postDescription editor\" name=\"postDescription\" rows=\"3\" placeholder=\"Description de l'article\">{{ post.Description }}</textarea>
+                <textarea class=\"form-control\" id=\"postDescription\" name=\"postDescription\" rows=\"3\" placeholder=\"Description de l'article\">{{ post.Description }}</textarea>
             </div>
+
+            <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+
 
             <div class=\"form-group\">
                 <label for=\"postAuteur\">Auteur</label>
@@ -252,6 +259,7 @@ class __TwigTemplate_acf383b73a55198c995c89c1c0fd2e64816b74e81f23340f68bd9fbd78d
         </form>
     </div>
 
+    
 {% endblock %}", "AdminPost/edit.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\AdminPost\\edit.html.twig");
     }
 }

@@ -57,7 +57,7 @@ class __TwigTemplate_b067b9bf58d49fbe6dbfb57cb6dae5685140737b8e0be84ed82602761b0
         $macros = $this->macros;
         // line 5
         echo "
-    <form method=\"post\">
+    <form method=\"post\" style=\"margin-top: 50px;\">
         <div class=\"card border-primary rounded-0\">
             <div class=\"card-header p-0\">
                 <div class=\"bg-info text-white text-center py-2\">
@@ -128,7 +128,7 @@ class __TwigTemplate_b067b9bf58d49fbe6dbfb57cb6dae5685140737b8e0be84ed82602761b0
 
 {% block body %}
 
-    <form method=\"post\">
+    <form method=\"post\" style=\"margin-top: 50px;\">
         <div class=\"card border-primary rounded-0\">
             <div class=\"card-header p-0\">
                 <div class=\"bg-info text-white text-center py-2\">

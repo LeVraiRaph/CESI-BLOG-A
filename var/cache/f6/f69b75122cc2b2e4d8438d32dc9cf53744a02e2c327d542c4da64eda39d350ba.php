@@ -102,7 +102,11 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+
+";
+        // line 59
+        echo "<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#postDescription' ) )
@@ -111,9 +115,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         } );
 </script>
 ";
-        // line 64
+        // line 68
         $this->displayBlock('javascript', $context, $blocks);
-        // line 65
+        // line 69
         echo "</body>
 </html>";
     }
@@ -137,7 +141,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         $macros = $this->macros;
     }
 
-    // line 64
+    // line 68
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -150,7 +154,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 
     public function getDebugInfo()
     {
-        return array (  141 => 64,  135 => 46,  129 => 10,  122 => 5,  117 => 65,  115 => 64,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  145 => 68,  139 => 46,  133 => 10,  126 => 5,  121 => 69,  119 => 68,  109 => 59,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -210,6 +214,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+
+{# Ajout du plugin WYSIWYG pour les ajouts d'articles #}
 <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
@@ -218,6 +225,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
             console.error( error );
         } );
 </script>
+{# Fin de l'ajout du plugin #}
 {% block javascript %}{% endblock %}
 </body>
 </html>", "base.admin.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\base.admin.html.twig");
