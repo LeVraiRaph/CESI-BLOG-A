@@ -51,10 +51,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     ";
-        // line 11
-        echo "        ";
+        // line 10
         $this->displayBlock('css', $context, $blocks);
-        // line 12
+        // line 11
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
@@ -91,9 +90,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <div class=\"container\">
 
     ";
-        // line 47
+        // line 46
         $this->displayBlock('body', $context, $blocks);
-        // line 48
+        // line 47
         echo "
 </div>
 
@@ -103,8 +102,10 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+
 ";
-        // line 58
+        // line 59
         echo "<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
@@ -114,9 +115,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         } );
 </script>
 ";
-        // line 67
-        $this->displayBlock('javascript', $context, $blocks);
         // line 68
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 69
         echo "</body>
 </html>";
     }
@@ -128,19 +129,19 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         echo "ADMIN";
     }
 
-    // line 11
+    // line 10
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 47
+    // line 46
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 67
+    // line 68
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -153,7 +154,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 
     public function getDebugInfo()
     {
-        return array (  144 => 67,  138 => 47,  132 => 11,  125 => 5,  120 => 68,  118 => 67,  108 => 58,  97 => 48,  95 => 47,  58 => 12,  55 => 11,  47 => 5,  41 => 1,);
+        return array (  145 => 68,  139 => 46,  133 => 10,  126 => 5,  121 => 69,  119 => 68,  109 => 59,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -167,8 +168,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
-    {# <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script> #}
-        {% block css %}{% endblock %}
+    {% block css %}{% endblock %}
 
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
@@ -214,6 +214,8 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
+
 {# Ajout du plugin WYSIWYG pour les ajouts d'articles #}
 <script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
