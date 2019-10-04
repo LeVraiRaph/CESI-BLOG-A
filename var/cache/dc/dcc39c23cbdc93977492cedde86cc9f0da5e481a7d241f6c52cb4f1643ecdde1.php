@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* base.admin.html.twig */
-class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96d9898 extends \Twig\Template
+class __TwigTemplate_8147222fafa58f4b6aa1f2d4a76d74b330f542707beab7a3e76c9f79bf57fb35 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -68,6 +68,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
                     Gestion des articles
                 </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/AdminCategory/List\">Categories</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/List\">Liste</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/Add\">Ajout</a>
                 </div>
@@ -90,9 +91,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 <div class=\"container\">
 
     ";
-        // line 46
-        $this->displayBlock('body', $context, $blocks);
         // line 47
+        $this->displayBlock('body', $context, $blocks);
+        // line 48
         echo "
 </div>
 
@@ -105,7 +106,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
     <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
 
 ";
-        // line 59
+        // line 60
         echo "<script src=\"https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js\"></script>
 <script>
     ClassicEditor
@@ -115,9 +116,9 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         } );
 </script>
 ";
-        // line 68
-        $this->displayBlock('javascript', $context, $blocks);
         // line 69
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 70
         echo "</body>
 </html>";
     }
@@ -135,13 +136,13 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
         $macros = $this->macros;
     }
 
-    // line 46
+    // line 47
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 68
+    // line 69
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -154,7 +155,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
 
     public function getDebugInfo()
     {
-        return array (  145 => 68,  139 => 46,  133 => 10,  126 => 5,  121 => 69,  119 => 68,  109 => 59,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  146 => 69,  140 => 47,  134 => 10,  127 => 5,  122 => 70,  120 => 69,  110 => 60,  97 => 48,  95 => 47,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -183,6 +184,7 @@ class __TwigTemplate_6860f25d363fffddccad2b89b67db54113b2f5e4fda5db1ede7f8ec8c96
                     Gestion des articles
                 </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/AdminCategory/List\">Categories</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/List\">Liste</a>
                     <a class=\"dropdown-item\" href=\"/AdminPost/Add\">Ajout</a>
                 </div>

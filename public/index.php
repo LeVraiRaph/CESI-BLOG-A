@@ -42,7 +42,7 @@ if($controller <> ''){
     }
     catch(Exception $e) {
         $errorMessage = $e->getMessage();
-        $htmlFullErrorMessage = $e->xdebug_message;
+        $htmlFullErrorMessage = $e->getMessage();
         $abstractController = new \src\Controller\AbstractController();
         echo $abstractController->getTwig()->render('error.html.twig',[
             'errorMessage' => $errorMessage

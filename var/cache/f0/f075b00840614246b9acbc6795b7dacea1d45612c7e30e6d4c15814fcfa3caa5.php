@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* Post/list.html.twig */
-class __TwigTemplate_96115b8942a49a0b7949ff2e1b8b8333d6b3ae8815b4caeaef5cb617b19bf2cc extends \Twig\Template
+class __TwigTemplate_246473976afe32a9d9f21db4fcb5b3d2f7c9e8ef2d03fcc5f4bdd57ecc2f07eb extends \Twig\Template
 {
     private $source;
     private $macros = [];

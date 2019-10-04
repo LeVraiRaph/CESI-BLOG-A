@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* Login/form.html.twig */
-class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e67454a extends \Twig\Template
+class __TwigTemplate_9f2c3a010bcfc2c0f0966c775e10a4e1e75cb2ba94ca2e30eb58153a8f4b2114 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -105,15 +105,13 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
         echo " class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <div class=\"g-recaptcha\" data-sitekey=\"6LejubsUAAAAAOmToSpxEbyD8UmMvXrINRbJbp0B\"></div>
-                    
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" style=\"margin-top: 15px;\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
                 </form>
             </div>
         </div>
     </div>
     </div>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 ";
     }
@@ -165,15 +163,13 @@ class __TwigTemplate_0a4a90df0616a550406c53b782b48c9c70ec397ac6169c111dcc35561e6
                         <input type=\"checkbox\" {{ checked }} class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <div class=\"g-recaptcha\" data-sitekey=\"6LejubsUAAAAAOmToSpxEbyD8UmMvXrINRbJbp0B\"></div>
-                    
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" style=\"margin-top: 15px;\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
                 </form>
             </div>
         </div>
     </div>
     </div>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 {% endblock %}", "Login/form.html.twig", "C:\\wamp64\\www\\CESI-BLOG-A\\templates\\Login\\form.html.twig");
     }

@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* Contact/send.html.twig */
-class __TwigTemplate_b067b9bf58d49fbe6dbfb57cb6dae5685140737b8e0be84ed82602761b045244 extends \Twig\Template
+class __TwigTemplate_0c9071a121fb640c926f4e821a410632099059e9e137190105b67a29cc465f91 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -57,7 +57,7 @@ class __TwigTemplate_b067b9bf58d49fbe6dbfb57cb6dae5685140737b8e0be84ed82602761b0
         $macros = $this->macros;
         // line 5
         echo "
-    <form method=\"post\" style=\"margin-top: 50px;\">
+    <form method=\"post\">
         <div class=\"card border-primary rounded-0\">
             <div class=\"card-header p-0\">
                 <div class=\"bg-info text-white text-center py-2\">
@@ -128,7 +128,7 @@ class __TwigTemplate_b067b9bf58d49fbe6dbfb57cb6dae5685140737b8e0be84ed82602761b0
 
 {% block body %}
 
-    <form method=\"post\" style=\"margin-top: 50px;\">
+    <form method=\"post\">
         <div class=\"card border-primary rounded-0\">
             <div class=\"card-header p-0\">
                 <div class=\"bg-info text-white text-center py-2\">

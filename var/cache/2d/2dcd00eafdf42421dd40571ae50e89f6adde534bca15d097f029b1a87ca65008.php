@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* Compte/compte.html.twig */
-class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443f87ab extends \Twig\Template
+class __TwigTemplate_b2a505090b99209f2bad298d868e03ca466d2482462edee4d450a4275ac3585d extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -56,26 +56,22 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
     {
         $macros = $this->macros;
         // line 5
-        echo "    ";
-        // line 6
-        echo "    <div class=\"jumbotron\" style=\"margin-top: 50px;\">
+        echo "
+    <div class=\"jumbotron\">
         <h1>Mon Profil</h1> 
         <div class=\"row\">
             <div class=\"col-10\">
                 <ul class=\"list-group\">
-                ";
-        // line 12
-        echo "                    <li class=\"list-group-item\">";
+                    <li class=\"list-group-item\">";
+        // line 11
         echo twig_escape_filter($this->env, ($context["nom"] ?? null), "html", null, true);
         echo "</li>
-                ";
-        // line 14
-        echo "                    <li class=\"list-group-item\">";
+                    <li class=\"list-group-item\">";
+        // line 12
         echo twig_escape_filter($this->env, ($context["prenom"] ?? null), "html", null, true);
         echo "</li>
-                ";
-        // line 16
-        echo "                    <li class=\"list-group-item\">";
+                    <li class=\"list-group-item\">";
+        // line 13
         echo twig_escape_filter($this->env, ($context["role"] ?? null), "html", null, true);
         echo "</li>
                 </ul>
@@ -98,7 +94,7 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 
     public function getDebugInfo()
     {
-        return array (  78 => 16,  73 => 14,  68 => 12,  61 => 6,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  75 => 13,  71 => 12,  67 => 11,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -107,17 +103,14 @@ class __TwigTemplate_56cd7e64d0af6eb252290376c2ec0d7ec71d6797eae76092f7495368443
 {% block title %}{{ parent() }} - Contact {% endblock %}
 
 {% block body %}
-    {# Création du container pour afficher les identifiants et le rôle #}
-    <div class=\"jumbotron\" style=\"margin-top: 50px;\">
+
+    <div class=\"jumbotron\">
         <h1>Mon Profil</h1> 
         <div class=\"row\">
             <div class=\"col-10\">
                 <ul class=\"list-group\">
-                {# Je recupere le nom #}
                     <li class=\"list-group-item\">{{ nom }}</li>
-                {# Je recupere le Prénom #}
                     <li class=\"list-group-item\">{{ prenom }}</li>
-                {# Je recupere le Rôle #}
                     <li class=\"list-group-item\">{{ role }}</li>
                 </ul>
             </div>
