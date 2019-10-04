@@ -4,6 +4,7 @@ namespace src\Controller;
 use src\Model\Bdd;
 use src\Model\Post;
 use src\Model\PostManager;
+use src\Model\user;
 
 class RedacteurPostController extends AbstractController{
 
@@ -27,8 +28,9 @@ class RedacteurPostController extends AbstractController{
         }else{
             $dataPosts = $postManager->getAll();
         }
-
-        echo $this->twig->render('RedacteurPost/list.html.twig',[
+        $user = new user (Bdd::getInstance());
+        $nom = $user->getNomSession();
+        echo $this->twig->render('RedacteurPost/list.html.twig',compact('nom'),[
             'dataPosts' => $dataPosts
         ]);
 

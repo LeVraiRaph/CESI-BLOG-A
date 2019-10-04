@@ -1,0 +1,24 @@
+{% extends "base.admin.html.twig" %}
+{% block title %}{{ parent() }} - Liste des articles {% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Détails de l'utilisateur</h1>
+        <div class="row">
+            <div class="col-6">
+                <ul class="list-group">
+                    <li class="list-group-item">{{ user.Nom }}</li>
+                    <li class="list-group-item">{{ user.Prenom }}</li>
+                    <li class="list-group-item">Rôle : {{ user.Role) }}</li>
+                    <li class="list-group-item">Validation du compte : {{ user.ValidationAdmin }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

@@ -13,4 +13,4 @@ class CompteController extends AbstractController {
         echo $this->twig->render('Compte/compte.html.twig',compact('nom', 'prenom', 'role'));
         //require $_SERVER['DOCUMENT_ROOT'].'/../templates/Contact/send.html.php';
     }
-}
+} 

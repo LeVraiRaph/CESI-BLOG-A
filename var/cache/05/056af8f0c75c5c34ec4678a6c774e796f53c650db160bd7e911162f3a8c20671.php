@@ -60,7 +60,7 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
         <div class=\"col-sm-9 col-md-7 col-lg-5 mx-auto\">
             <div class=\"card card-signin my-5\">
                 <div class=\"card-body\">
-                    <h5 class=\"card-title text-center\">Login</h5>
+                    <h5 class=\"card-title text-center\">S'inscrire</h5>
 
 
                 <form class=\"form-signin\" name=\"authentification\" method=\"POST\">
@@ -77,26 +77,36 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
         // line 19
         echo twig_escape_filter($this->env, (($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = ($context["arrayRememberMe"] ?? null)) && is_array($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144) || $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 instanceof ArrayAccess ? ($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144[1] ?? null) : null), "html", null, true);
         echo "\">
-                        <label for=\"inputPassword\">Password</label>
+                        <label for=\"inputPassword\">Votre mot de passe</label>
+                    </div>
+
+                     <div class=\"form-label-group\">
+                        <input type=\"text\" name=\"nom\" id=\"inputNom\" class=\"form-control\" placeholder=\"Nom\">
+                        <label for=\"inputPassword\">Votre nom</label>
+                    </div>
+
+                    <div class=\"form-label-group\">
+                        <input type=\"text\" name=\"prenom\" id=\"inputPrenom\" class=\"form-control\" placeholder=\"Prenom\">
+                        <label for=\"inputPassword\">Votre prénom</label>
                     </div>
 
                     <div class=\"custom-control custom-checkbox mb-3\">
                         ";
-        // line 24
+        // line 34
         $context["checked"] = "";
-        // line 25
+        // line 35
         echo "                        ";
         if (((($__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b = ($context["arrayRememberMe"] ?? null)) && is_array($__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b) || $__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b instanceof ArrayAccess ? ($__internal_1cfccaec8dd2e8578ccb026fbe7f2e7e29ac2ed5deb976639c5fc99a6ea8583b[0] ?? null) : null) != "")) {
             echo " ";
             $context["checked"] = "checked";
         }
-        // line 26
+        // line 36
         echo "                        <input type=\"checkbox\" ";
         echo twig_escape_filter($this->env, ($context["checked"] ?? null), "html", null, true);
         echo " class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Valider l'inscription</button>
                 </form>
             </div>
         </div>
@@ -119,7 +129,7 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
 
     public function getDebugInfo()
     {
-        return array (  94 => 26,  88 => 25,  86 => 24,  78 => 19,  70 => 14,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  104 => 36,  98 => 35,  96 => 34,  78 => 19,  70 => 14,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -132,7 +142,7 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
         <div class=\"col-sm-9 col-md-7 col-lg-5 mx-auto\">
             <div class=\"card card-signin my-5\">
                 <div class=\"card-body\">
-                    <h5 class=\"card-title text-center\">Login</h5>
+                    <h5 class=\"card-title text-center\">S'inscrire</h5>
 
 
                 <form class=\"form-signin\" name=\"authentification\" method=\"POST\">
@@ -143,7 +153,17 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
 
                     <div class=\"form-label-group\">
                         <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required value=\"{{ arrayRememberMe[1] }}\">
-                        <label for=\"inputPassword\">Password</label>
+                        <label for=\"inputPassword\">Votre mot de passe</label>
+                    </div>
+
+                     <div class=\"form-label-group\">
+                        <input type=\"text\" name=\"nom\" id=\"inputNom\" class=\"form-control\" placeholder=\"Nom\">
+                        <label for=\"inputPassword\">Votre nom</label>
+                    </div>
+
+                    <div class=\"form-label-group\">
+                        <input type=\"text\" name=\"prenom\" id=\"inputPrenom\" class=\"form-control\" placeholder=\"Prenom\">
+                        <label for=\"inputPassword\">Votre prénom</label>
                     </div>
 
                     <div class=\"custom-control custom-checkbox mb-3\">
@@ -152,7 +172,7 @@ class __TwigTemplate_18e5e7179fc359eb9998c5b3f3bf9dc2934ffd5898c175057040f9d373b
                         <input type=\"checkbox\" {{ checked }} class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Valider l'inscription</button>
                 </form>
             </div>
         </div>

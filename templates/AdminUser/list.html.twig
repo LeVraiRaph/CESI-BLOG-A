@@ -1,0 +1,45 @@
+{% extends "base.admin.html.twig" %}
+{% block title %}{{ parent() }} - Liste des articles {% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Liste des utilisateurs</h1>
+        <form name="recherche" method="POST" class="form-inline my-2 my-lg-0">
+            <div class="col-2">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-8"></div>
+        </form>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Rôle</th>
+            <th scope="col">Validation</th>
+        </tr>
+        </thead> 
+        <tbody>
+        {% for user in dataUsers %}
+            <tr>
+                <th scope="row"><a href="/AdminUser/View/{{ user.id }}">{{ user.id }}</a></th>
+                <td>{{ user.Nom }}</td>
+                <td>{{ user.Prenom }}</td>
+                <td>{{ user.Role }}</td>
+                <td>{{ user.ValidationAdmin }}</td>
+                <td>
+                    <a class="btn btn-success" href="/AdminUser/View/{{ user.id }}">Voir</a>
+                    <a class="btn btn-warning" href="/AdminUser/Edit/{{ user.id }}">Editer</a>
+                    <a class="btn btn-danger" href="/AdminUser/Delete/{{ user.id }}">Supprimer</a>
+                </td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    
+
+{% endblock %}

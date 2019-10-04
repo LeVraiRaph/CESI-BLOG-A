@@ -31,7 +31,7 @@ class AdminPostController extends AbstractController{
         echo $this->twig->render('AdminPost/list.html.twig',[
             'dataPosts' => $dataPosts
         ]);
-
+        
     }
 
     public function View($id){

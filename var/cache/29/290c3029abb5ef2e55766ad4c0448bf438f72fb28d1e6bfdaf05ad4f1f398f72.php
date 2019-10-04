@@ -57,7 +57,7 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
         echo "
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-    <a class=\"navbar-brand\" href=\"/AdminPost/Index\">Espace Admin</a>
+    <a class=\"navbar-brand\" href=\"/AdminPost/Index\">Blog Admin</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
     </button>
@@ -81,6 +81,9 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
                     <a class=\"dropdown-item\" href=\"/AdminFile/Write\">Ecrire</a>
                 </div>
             </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/AdminUtilisateurs\">Gestion utilisateurs</a>
+            </li>
             <a class=\"nav-item nav-link \" href=\"/AdminFixtures/Load\">Fixtures</a>
             <a class=\"nav-item nav-link \" href=\"/Login/Logout\">Déconnexion</a>
         </div>
@@ -90,9 +93,9 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 <div class=\"container\">
 
     ";
-        // line 46
+        // line 49
         $this->displayBlock('body', $context, $blocks);
-        // line 47
+        // line 50
         echo "
 </div>
 
@@ -111,9 +114,9 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
         } );
 </script>
 ";
-        // line 64
+        // line 67
         $this->displayBlock('javascript', $context, $blocks);
-        // line 65
+        // line 68
         echo "</body>
 </html>";
     }
@@ -131,13 +134,13 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
         $macros = $this->macros;
     }
 
-    // line 46
+    // line 49
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 64
+    // line 67
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -150,7 +153,7 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 
     public function getDebugInfo()
     {
-        return array (  141 => 64,  135 => 46,  129 => 10,  122 => 5,  117 => 65,  115 => 64,  96 => 47,  94 => 46,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  144 => 67,  138 => 49,  132 => 10,  125 => 5,  120 => 68,  118 => 67,  99 => 50,  97 => 49,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -168,7 +171,7 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
 
 <body>
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-    <a class=\"navbar-brand\" href=\"/AdminPost/Index\">Espace Admin</a>
+    <a class=\"navbar-brand\" href=\"/AdminPost/Index\">Blog Admin</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
     </button>
@@ -191,6 +194,9 @@ class __TwigTemplate_bad0262bd112fb33b96f10613178be77db0c801f7e5d9fac03926786930
                     <a class=\"dropdown-item\" href=\"/AdminFile/Read\">Lire</a>
                     <a class=\"dropdown-item\" href=\"/AdminFile/Write\">Ecrire</a>
                 </div>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/AdminUtilisateurs\">Gestion utilisateurs</a>
             </li>
             <a class=\"nav-item nav-link \" href=\"/AdminFixtures/Load\">Fixtures</a>
             <a class=\"nav-item nav-link \" href=\"/Login/Logout\">Déconnexion</a>

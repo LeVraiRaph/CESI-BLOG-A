@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* RedacteurPost/list.html.twig */
-class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2ec43e extends \Twig\Template
+/* AdminFile/read.html.twig */
+class __TwigTemplate_b4d10f60a4071a47dbbd9c855ba4a576ee79db41fbfcac3065befe7cfb6bd970 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -33,13 +33,13 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
     protected function doGetParent(array $context)
     {
         // line 1
-        return "base.redacteur.html.twig";
+        return "base.admin.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        $this->parent = $this->loadTemplate("base.redacteur.html.twig", "RedacteurPost/list.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.admin.html.twig", "AdminFile/read.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -48,7 +48,7 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
     {
         $macros = $this->macros;
         $this->displayParentBlock("title", $context, $blocks);
-        echo " - Contact ";
+        echo " - Lecture de fichier ";
     }
 
     // line 4
@@ -58,25 +58,24 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
         // line 5
         echo "
     <div class=\"jumbotron\">
-        <h1>Bienvenue Monsieur ";
-        // line 7
-        echo twig_escape_filter($this->env, ($context["nom"] ?? null), "html", null, true);
-        echo "</h1> 
-        <div class=\"row\">
-            <div class=\"col-10\">
-                <ul class=\"list-group\">
-                    <li>liste à venir</li>
-                </ul>
-            </div>
-        </div>
+        <h1 class=\"display-4\">Lire un fichier</h1>
+        <form method=\"post\">
+            <input type=\"hidden\" name=\"champMini\">
+            <button type=\"submit\" class=\"btn btn-primary\">Lire</button>
+        </form>
     </div>
+
+    ";
+        // line 14
+        echo twig_var_dump($this->env, $context, ...[0 => ($context["arrayDataFile"] ?? null)]);
+        echo "
 
 ";
     }
 
     public function getTemplateName()
     {
-        return "RedacteurPost/list.html.twig";
+        return "AdminFile/read.html.twig";
     }
 
     public function isTraitable()
@@ -86,27 +85,26 @@ class __TwigTemplate_53db254d96717a77ff873f5ae60f50c56b88ae31eaa4c4c9fe24a720be2
 
     public function getDebugInfo()
     {
-        return array (  63 => 7,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  70 => 14,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends \"base.redacteur.html.twig\" %}
-{% block title %}{{ parent() }} - Contact {% endblock %}
+        return new Source("{% extends \"base.admin.html.twig\" %}
+{% block title %}{{ parent() }} - Lecture de fichier {% endblock %}
 
 {% block body %}
 
     <div class=\"jumbotron\">
-        <h1>Bienvenue Monsieur {{ nom }}</h1> 
-        <div class=\"row\">
-            <div class=\"col-10\">
-                <ul class=\"list-group\">
-                    <li>liste à venir</li>
-                </ul>
-            </div>
-        </div>
+        <h1 class=\"display-4\">Lire un fichier</h1>
+        <form method=\"post\">
+            <input type=\"hidden\" name=\"champMini\">
+            <button type=\"submit\" class=\"btn btn-primary\">Lire</button>
+        </form>
     </div>
 
-{% endblock %}", "RedacteurPost/list.html.twig", "C:\\wamp64\\www\\cesiblog\\CESI-BLOG-A\\templates\\RedacteurPost\\list.html.twig");
+    {{ dump(arrayDataFile) }}
+
+{% endblock %}", "AdminFile/read.html.twig", "C:\\wamp64\\www\\cesiblog\\CESI-BLOG-A\\templates\\AdminFile\\read.html.twig");
     }
 }

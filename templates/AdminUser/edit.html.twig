@@ -1,0 +1,36 @@
+{% extends "base.admin.html.twig" %}
+{% block title %}{{ parent() }} - Liste des articles {% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Modifier l'utilisateur</h1>
+        <form name="userAdd" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="userNom">Nom</label>
+                <input type="text" class="form-control" id="userNom" name="userNom" placeholder="Nom de l'utilisateur" value="{{ user.Nom }}">
+            </div>
+
+            <div class="form-group">
+                <label for="userPrenom">Prenom</label>
+                <textarea class="form-control" id="userPrenom" name="userPrenom" rows="3" placeholder="Prénom de l'utilisateur">{{ user.Prenom }}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userRole">Role</label>
+                <select class="form-control" id="userRole" name="userRole">
+                    <option value="admin" {% if user.Role == 'admin' %}selected="selected"{% endif %}>admin</option>
+                    <option value="redacteur" {% if user.Role == 'redacteur' %}selected="selected"{% endif %}>rédacteur</option>
+                    <option value="user" {% if user.Role == 'user' %}selected="selected"{% endif %}>user</option>
+                </select>
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </form>
+    </div>
+
+
+
+
+
+{% endblock %}

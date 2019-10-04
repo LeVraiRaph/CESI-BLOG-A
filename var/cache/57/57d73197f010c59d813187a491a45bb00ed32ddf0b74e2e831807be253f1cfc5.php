@@ -105,7 +105,8 @@ class __TwigTemplate_4e9dae7102a67d270b8b14dcc11741dfad4bb7ba1a894a581f60543e2df
         echo " class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Se connecter</button>
+                    <a class=\"btn btn-lg btn-primary btn-block text-uppercase\" href=\"/Login/Register\">S'inscrire</a>
                 </form>
             </div>
         </div>
@@ -163,7 +164,8 @@ class __TwigTemplate_4e9dae7102a67d270b8b14dcc11741dfad4bb7ba1a894a581f60543e2df
                         <input type=\"checkbox\" {{ checked }} class=\"custom-control-input\" name =\"remember\" id=\"customCheck1\">
                         <label class=\"custom-control-label\" for=\"customCheck1\">Remember password</label>
                     </div>
-                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Sign in</button>
+                    <button class=\"btn btn-lg btn-primary btn-block text-uppercase\" type=\"submit\">Se connecter</button>
+                    <a class=\"btn btn-lg btn-primary btn-block text-uppercase\" href=\"/Login/Register\">S'inscrire</a>
                 </form>
             </div>
         </div>
