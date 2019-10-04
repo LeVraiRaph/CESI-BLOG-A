@@ -50,13 +50,14 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
     ";
-        // line 10
-        $this->displayBlock('css', $context, $blocks);
         // line 11
+        $this->displayBlock('css', $context, $blocks);
+        // line 12
         echo "
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -68,13 +69,13 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
@@ -86,9 +87,9 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
 <div class=\"container\">
 
     ";
-        // line 42
-        $this->displayBlock('body', $context, $blocks);
         // line 43
+        $this->displayBlock('body', $context, $blocks);
+        // line 44
         echo "
 </div>
 
@@ -99,9 +100,9 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 52
-        $this->displayBlock('javascript', $context, $blocks);
         // line 53
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 54
         echo "</body>
 </html>";
     }
@@ -113,19 +114,19 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
         echo "CESI BLOG";
     }
 
-    // line 10
+    // line 11
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 42
+    // line 43
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 52
+    // line 53
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -138,7 +139,7 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
 
     public function getDebugInfo()
     {
-        return array (  129 => 52,  123 => 42,  117 => 10,  110 => 5,  105 => 53,  103 => 52,  92 => 43,  90 => 42,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  130 => 53,  124 => 43,  118 => 11,  111 => 5,  106 => 54,  104 => 53,  93 => 44,  91 => 43,  58 => 12,  56 => 11,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -152,10 +153,11 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
     <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
+    <script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
     {% block css %}{% endblock %}
 
 <body>
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"margin-bottom: 20px;\">
     <a class=\"navbar-brand\" href=\"#\">Navbar</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -167,13 +169,13 @@ class __TwigTemplate_31faf3734f6c0d993e4dfdb1c131c823a22bc9963239fffa4bcae169984
                 <a class=\"nav-link\" href=\"/\">Home</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Compte/Compte\">Mon Compte</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/ApiList/Lister\">Les 5 derniers articles</a>
+                <a class=\"nav-link\" href=\"/Contact\">Contact</a>
             </li>
         </ul>
         <form class=\"form-inline my-2 my-lg-0\" method=\"post\" action=\"/Post/List\">
